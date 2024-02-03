@@ -144,7 +144,7 @@ const Nav = styled.nav`
 const ResponsiveNav = styled.div`
   display: flex;
   position: absolute;
-  z-index: 1;
+  z-index: 9999;
   top: ${({ state }) => (state ? "50px" : "-400px")};
   background-color: white;
   height: 30vh;

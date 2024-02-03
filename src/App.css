@@ -4,11 +4,59 @@
 
 .heroRaila{
   text-align: center;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./assets/onee.jpg);
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), ;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+/* linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), */
+
+.description-raila{
+  width: 600px;
+  position: absolute;
+  z-index: 999;
+  color: whitesmoke;
+  top: 30%;
+  left: 20%;
+}
+
+.description h1{
+  font-size: 46px;
+}
+
+.description p{
+  font-size: 22px;
+}
+.txt{
+  font-size: 32px;
+}
+.carousel-boult{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-boult span{
+  display: none;
+ width: 45px;
+ height: 12px;
+ background-color: rgb(179, 178, 176);
+ margin-left: 10px;
+ border-radius: 10px;
+ cursor: pointer;
+ box-shadow: 3px 2px 2px rgba(73, 72, 72, 0.338);
+}
+
+.transparent-background{
+  max-width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(166, 255, 0)); */
 }
 
 .App-logo {
@@ -44,4 +92,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media all and (max-width: 768px){
+  .heroRaila{
+    height: 80vh;
+  }
+  .description-raila{
+      width: fit-content;
+      top: 10%;
+      left: 0%;
+  }
+  
+  .description h1{
+      font-size: 22px;
+  }
+  
+  .description p{
+      font-size: 11px;
+  }
+  .carousel-boult span{
+      display: none;
+  }
+  
 }
