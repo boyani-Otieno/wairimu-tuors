@@ -115,12 +115,12 @@ p {
       left: 0%;
   }
   
-  .description h1{
+   h1{
       font-size: 22px;
   }
   
-  .description p{
-      font-size: 11px;
+   p{
+      font-size: 15px;
   }
   .carousel-boult span{
       display: none;
