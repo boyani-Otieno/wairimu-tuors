@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Recommend from "./components/Recommend";
-import ScrollToTop from "./components/ScrollToTop";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
+import Footer from "./Components/Footer";
+import Home from "./Components/Home";
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+import Recommend from "./Components/Recommend";
+import Scroll from './Components/Scroll'
+import Services from "./Components/Services";
+import Testimonials from "./Components/Testimonials";
 import scrollreveal from "scrollreveal";
 export default function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function App() {
     sr.reveal(
       `
         nav,
+        #home
         #hero,
         #services,
         #recommend,
@@ -32,8 +34,9 @@ export default function App() {
   }, []);
   return (
     <div>
-      <ScrollToTop />
+      <Scroll />
       <Navbar />
+      <Home />
       <Hero />
       <Services />
       <Recommend />
