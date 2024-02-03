@@ -3,6 +3,8 @@ import styled from "styled-components";
 import logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
+
+
 export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
   return (
@@ -33,10 +35,16 @@ export default function Navbar() {
             <a href="#recommend">Places</a>
           </li>
           <li>
+            <a href="#recommend">Services</a>
+          </li>
+          <li>
+            <a href="#recommend">My Blogs</a>
+          </li>
+          <li>
             <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
-        <button>Connect</button>
+        <button>Contact Me</button>
       </Nav>
       <ResponsiveNav state={navbarState}>
         <ul>
@@ -52,7 +60,17 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#recommend" onClick={() => setNavbarState(false)}>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#recommend" onClick={() => setNavbarState(false)}>
               Places
+            </a>
+          </li>
+          <li>
+            <a href="#recommend" onClick={() => setNavbarState(false)}>
+              My Blogs
             </a>
           </li>
           <li>
@@ -70,6 +88,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10vh;
   .brand {
     .container {
       cursor: pointer;
@@ -87,12 +106,12 @@ const Nav = styled.nav`
   }
   ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     list-style-type: none;
     li {
       a {
         text-decoration: none;
-        color: #0077b6;
+        color: black;
         font-size: 1.2rem;
         transition: 0.1s ease-in-out;
         &:hover {
@@ -147,7 +166,7 @@ const ResponsiveNav = styled.div`
   z-index: 9999;
   top: ${({ state }) => (state ? "50px" : "-400px")};
   background-color: white;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   align-items: center;
   transition: 0.3s ease-in-out;
