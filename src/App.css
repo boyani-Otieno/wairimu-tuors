@@ -22,16 +22,26 @@
   left: 20%;
 }
 
-.description h1{
+/* .description h1{
   font-size: 46px;
+} */
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
 }
-
-.description p{
+p {
+  text-align: center;
+  /* padding: 0 30vw;
+  margin-top: 0.5rem; */
+  /* font-size: 1.2rem; */
   font-size: 22px;
 }
-.txt{
+/* .description p{
+  font-size: 22px;
+} */
+/* .txt{
   font-size: 32px;
-}
+} */
 .carousel-boult{
   display: flex;
   align-items: center;

@@ -27,7 +27,7 @@ const ImageSlider = [
   },
   {
     url: fourrImage,
-    title: 'MAKE WONDERFUL MEMORIES',
+    title: 'MAKE MEMORIES',
     body:
       'This website showcases the travel experiences curated by Bilha Wairimu, highlighting the diverse regions across Kenya that she can guide tourists through. Explore the beauty and richness of Kenyas various locales as Bilha Wairimu offers a unique perspective and expertise in making your travel experiences memorable and authentic. Discover the enchanting destinations, cultural gems, and hidden treasures across the Kenyan landscape through the lens of this dedicated travel guide.',
   },
